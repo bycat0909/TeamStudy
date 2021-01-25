@@ -9,6 +9,7 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.");
 		System.out.println("두개의 정수를 입력해주세요..");
+		System.out.println("두개의 정수를 입력해주세요..");
 		
 		
 		int a = 0;
