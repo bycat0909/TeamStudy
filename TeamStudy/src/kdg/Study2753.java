@@ -17,7 +17,9 @@ public class Study2753 {
 		else {
 			answer = 0;
 		}
+		
 		System.out.print(answer);
+		
 	}
 
 }
