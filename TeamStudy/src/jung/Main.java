@@ -3,28 +3,26 @@ package jung;
 import java.util.Scanner;
 
 /*
- * 연도가 주어졌을 때, 윤년이면 1, 아니면 0을 출력하는 프로그램을 작성하시오.
- * 윤년은 연도가 4의 배수이면서, 100의 배수가 아닐 때 또는 400의 배수일 때이다.
- * 예를 들어, 2012년은 4의 배수이면서 100의 배수가 아니라서 윤년이다. 1900년은 100의 배수이고 400의 배수는 아니기 때문에 윤년이 아니다. 하지만, 2000년은 400의 배수이기 때문에 윤년이다.
+ * 0보다 크거나 같은 정수 N이 주어진다. 이때, N!을 출력하는 프로그램을 작성하시오.
+ * 첫째 줄에 정수 N(0 ≤ N ≤ 12)가 주어진다.
  */
 public class Main {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		while(scan.hasNextInt()) {
-			int year = scan.nextInt();			//입력받은 년도
-			int result = 0;						//결과(윤년O : 1, 윤년X : 0)
-			if(year >= 1 && year <= 4000) {
-				/*
-				 * 윤년은 4의 배수 이면서 100배수가 아닐 때, 또는 400의 배수 
-				 */
-				if(((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
-					result = 1;
+			int factorial = scan.nextInt();
+			if(factorial >= 0 && factorial <=12) {
+				int result= 1;
+//				while (factorial>0) {
+//					result *= factorial;
+//					factorial--;
+//				}
+				for (; factorial > 0; factorial--) {
+					result *= factorial;
 				}
-			}else {
-				continue;						
+				System.out.println(result);
 			}
-			System.out.println(result);
 		}
 		scan.close();							//스캐너 종료
 	}
