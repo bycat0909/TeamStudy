@@ -14,13 +14,13 @@ public class Main {
 			int factorial = scan.nextInt();
 			if(factorial >= 0 && factorial <=12) {
 				int result= 1;
-				while (factorial>0) {
-					result *= factorial;
-					factorial--;
-				}
-//				for (; factorial > 0; factorial--) {
+//				while (factorial>0) {
 //					result *= factorial;
+//					factorial--;
 //				}
+				for (; factorial > 0; factorial--) {
+					result *= factorial;
+				}
 				System.out.println(result);
 			}
 		}
