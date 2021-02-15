@@ -15,6 +15,7 @@ public class Study10872 {
 		System.out.println(sum);
 	}
 	
+	
 	public static int factorial(int num) {
 		if(num <= 1) {
 			return 1;
